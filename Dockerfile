@@ -15,7 +15,7 @@ RUN apt-get update -y \
     && apt-get -y clean \
     && rm -rf /var/lib/apt/lists/*
 
-ARG RUST_VERSION=1.85
+ARG RUST_VERSION=1.88
 ENV RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
     PATH=/usr/local/cargo/bin:$PATH \
